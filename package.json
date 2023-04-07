@@ -30,6 +30,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@pinia/testing": "^0.0.16",
     "@rushstack/eslint-patch": "^1.2.0",
     "@testing-library/vue": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
