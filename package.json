@@ -1,0 +1,51 @@
+{
+  "name": "form-anamnese",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,vue}": [
+      "yarn lint --fix",
+      "yarn test"
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "lint": "vue-tsc --noEmit && eslint src/**/*.{ts,vue} --max-warnings=0",
+    "format": "prettier .  --write",
+    "coverage": "vitest run --coverage",
+    "build": "vue-tsc && vite build",
+    "test": "vitest --no-watch -- --bail",
+    "test:watch": "vitest",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@testing-library/vue": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitest/coverage-c8": "^0.29.8",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "eslint": "^8.37.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "happy-dom": "^9.1.9",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vitest": "^0.29.8",
+    "vue-eslint-parser": "^9.1.1",
+    "vue-tsc": "^1.2.0"
+  }
+}
