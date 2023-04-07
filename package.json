@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "pinia": "^2.0.33",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@pinia/testing": "^0.0.16",
