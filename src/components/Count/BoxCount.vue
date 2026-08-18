@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { Count } from "~/components";
 
 import { useCounterStore } from "~/store";
+
 const store = useCounterStore();
 
 const doubleValue = computed(() => store.doubleCount);

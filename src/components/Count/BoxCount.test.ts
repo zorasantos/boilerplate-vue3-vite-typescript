@@ -1,7 +1,7 @@
 import { createTestingPinia } from "@pinia/testing";
-import { mount, VueWrapper } from "@vue/test-utils";
-import BoxCount from "./BoxCount.vue";
+import { mount, type VueWrapper } from "@vue/test-utils";
 import { useCounterStore } from "~/store";
+import BoxCount from "./BoxCount.vue";
 
 describe("BoxCount", () => {
   let wrapper: VueWrapper;
