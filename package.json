@@ -16,11 +16,11 @@
   },
   "scripts": {
     "dev": "vite",
-    "lint": "vue-tsc --noEmit && biome lint src",
+    "lint": "tsc --noEmit && biome lint src",
     "format": "biome format --write .",
     "check": "biome check --write .",
     "coverage": "vitest run --coverage",
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "test": "vitest --no-watch -- --bail",
     "test:watch": "vitest",
     "preview": "vite preview",
@@ -45,7 +45,6 @@
     "lint-staged": "^17.3.0",
     "typescript": "^7.0.2",
     "vite": "^8.2.1",
-    "vitest": "^4.1.11",
-    "vue-tsc": "^2.0.21"
+    "vitest": "^4.1.11"
   }
 }
